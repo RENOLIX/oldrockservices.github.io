@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Old Rock Products - Sacs Plastiques Alimentaires</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+/* ==================== GLOBAL STYLES ==================== */
+body {margin:0;font-family:"Tahoma",sans-serif;background:#f9fbff;color:#222;}
+
+/* Header */
+header {
+  background:#fff;
+  border-bottom:1px solid #eee;
+  padding:15px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  z-index:1000;
+}
+header .logo img {height:150px; display:block;}
+.menu-toggle {position:absolute;right:20px;top:15px;font-size:26px;cursor:pointer;color:#000;}
+nav {
+  display:none;
+  position:absolute;
+  top:100%;
+  right:0;
+  background:#fff;
+  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+  width:220px;
+  flex-direction:column;
+}
+nav a {padding:15px;color:#000;text-decoration:none;border-bottom:1px solid #eee; font-weight: bold;}
+nav a:hover {background:#f8faff; color:#007bff;}
+
+/* Titles */
+.main-section-title {
+  text-align: center;
+  margin: 80px 0 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+.main-section-title h2 {
+  font-size: 38px;
+  color: #1a1a1a;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.main-section-title span {
+  font-size: 24px;
+  color: #007bff;
+  display: block;
+}
+
+/* Presentation Block */
+.company-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px 30px;
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    text-align: center;
+    border-top: 5px solid #007bff;
+}
+.company-desc {font-size: 18px; color: #444; line-height: 1.8;}
+
+/* Products Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 0 16px;
+}
+.product-card {
+  text-align: center;
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+.product-card:hover { transform: translateY(-10px); }
+.product-card img {width: 100%; border-radius: 15px; height: 250px; object-fit: cover;}
+.product-title {font-size: 20px; font-weight: 700; margin: 20px 0 10px; font-family: 'Montserrat', sans-serif; color: #007bff;}
+.product-desc {font-size: 15px; color: #666; line-height: 1.6; font-family: 'Roboto', sans-serif;}
+
+/* Professional Contacts Card */
+.contacts-section { max-width: 900px; margin: 80px auto; padding: 0 20px; }
+.contacts-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+    padding: 40px;
+    border: 1px solid #f0f0f0;
+    text-align: center;
+}
+.commercial-info { margin-bottom: 30px; }
+.commercial-info h3 { font-family: 'Montserrat', sans-serif; font-size: 24px; margin-bottom: 5px; color: #1a1a1a; }
+.commercial-name { font-size: 16px; color: #666; font-weight: 400; }
+
+.contact-methods { display: flex; flex-direction: column; gap: 15px; align-items: center; }
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    padding: 12px 25px;
+    border-radius: 12px;
+    background: #f8faff;
+    width: 100%;
+    max-width: 350px;
+}
+.contact-item:hover { background: #eef4ff; transform: scale(1.02); }
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    background: #007bff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.contact-details { text-align: right; }
+.contact-label { font-size: 12px; color: #888; display: block; }
+.contact-text { font-size: 16px; font-weight: 600; font-family: 'Roboto', sans-serif; direction: ltr; display: block; }
+
+/* Footer */
+footer {background:#1a1a1a; color:#fff; text-align:center; padding:30px; margin-top:60px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html"><img src="https://i.ibb.co/23bP1jHV/Photo-Room-20250823-060952.png" alt="Logo Old Rock"></a>
+  </div>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <nav id="menu">
+    <a href="index.html">الرئيسية</a>
+    <a href="#apropos">من نحن</a>
+    <a href="#produits">منتجاتنا</a>
+    <a href="#contacts">اتصل بنا</a>
+  </nav>
+</header>
+
+<section id="presentation">
+  <div class="company-container">
+    <h1 style="font-family:'Montserrat';">Sacs Plastiques Alimentaires</h1>
+    <p class="company-desc">
+      نقدم لكم أكياساً بلاستيكية غذائية شفافة عالية الجودة، مصممة خصيصاً لتلبية معايير الصحة والسلامة الدولية. 
+      تضمن منتجاتنا شفافية تامة لعرض محتوياتكم الغذائية مع حماية قصوى من العوامل الخارجية.
+    </p>
+  </div>
+</section>
+
+<div class="main-section-title" id="produits">
+    <h2>Nos Produits</h2>
+    <span>منتجاتنا</span>
+</div>
+
+<div class="grid">
+  <div class="product-card">
+    <img src="https://placehold.co/600x600/f0f8ff/007bff?text=Sac+Petit" alt="Petit Format">
+    <h2 class="product-title">Petit Format</h2>
+    <p class="product-desc">أكياس بلاستيكية شفافة بحجم صغير، مثالية لتعبئة وحفظ الوجبات الخفيفة والمواد الغذائية الصغيرة بشكل آمن وصحي.</p>
+  </div>
+  <div class="product-card">
+    <img src="https://placehold.co/600x600/f0f8ff/007bff?text=Sac+Moyen" alt="Moyen Format">
+    <h2 class="product-title">Moyen Format</h2>
+    <p class="product-desc">أكياس شفافة متعددة الاستخدامات بحجم متوسط، توفر حماية ممتازة ورؤية واضحة للمنتجات للاستخدام اليومي.</p>
+  </div>
+  <div class="product-card">
+    <img src="https://placehold.co/600x600/f0f8ff/007bff?text=Sac+Grand" alt="Grand Format">
+    <h2 class="product-title">Grand Format</h2>
+    <p class="product-desc">سعة أكبر لتلبية احتياجات التعبئة بكميات وافرة، مع الحفاظ على مرونة وقوة الكيس والشفافية التامة لعرض المحتوى.</p>
+  </div>
+  <div class="product-card">
+    <img src="https://placehold.co/600x600/f0f8ff/007bff?text=Sac+Epais" alt="Épaisseur Extra">
+    <h2 class="product-title">Épaisseur Extra</h2>
+    <p class="product-desc">أكياس شفافة سميكة جداً مصممة خصيصاً لتحمل الأوزان الثقيلة وضمان أقصى درجات الحماية دون التعرض للتمزق.</p>
+  </div>
+</div>
+
+<section id="contacts" class="contacts-section">
+  <div class="main-section-title">
+    <h2>Contact Commercial</h2>
+    <span>الاتصال التجاري</span>
+  </div>
+  <div class="contacts-card">
+    <div class="commercial-info">
+        <h3>Service Commercial</h3>
+        <span class="commercial-name">Responsable : Yasmine Otsmane</span>
+    </div>
+    
+    <div class="contact-methods">
+      <a href="tel:+213778784494" class="contact-item">
+        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+        <div class="contact-details">
+          <span class="contact-label">Mobile Direct 01</span>
+          <span class="contact-text">+213 778 78 44 94</span>
+        </div>
+      </a>
+
+      <a href="tel:+213796534076" class="contact-item">
+        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+        <div class="contact-details">
+          <span class="contact-label">Mobile Direct 02</span>
+          <span class="contact-text">+213 796 53 40 76</span>
+        </div>
+      </a>
+
+      <a href="mailto:yasmine_otsmane@icloud.com" class="contact-item">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <div class="contact-details">
+          <span class="contact-label">E-mail Professionnel</span>
+          <span class="contact-text">yasmine_otsmane@icloud.com</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Old Rock Products. Tous droits réservés.</p>
+  <p style="font-size: 14px; opacity: 0.7;">Old.rock.products34@gmail.com</p>
+</footer>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById('menu');
+  menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+}
+</script>
+
+</body>
+</html>
